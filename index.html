@@ -98,7 +98,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-6">
             <div class="widget no-border m-0">
-              <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="index-mp-layout1.html"><img src="images/logo.png" alt=""></a>
+              <a class="menuzord-brand pull-left flip xs-pull-center mb-15" href="index.html"><img src="images/logo.png" alt=""></a>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3 ">
@@ -118,21 +118,21 @@
           <nav id="menuzord" class="menuzord default bg-light">
             <ul class="menuzord-menu">
               <li class="active"><a href="index.html">Inicio</a></li>
-              <li><a href="#">Destinos</a>
+              <li><a href="#destinos">Destinos</a>
                 <ul class="dropdown">
-                  <li><a href="#">Estados Unidos</a></li>
-                  <li><a href="#">Australia</a></li>
-                  <li><a href="#">Inglaterra</a></li>
-                  <li><a href="#">Canadá</a></li>
-                  <li><a href="#">Nueva Zelanda</a></li>
-                  <li><a href="#">Malta</a></li>
-                  <li><a href="#">Irlanda</a></li>
-                  <li><a href="#">Sudáfrica</a></li>
-                  <li><a href="#">Francia</a></li>
-                  <li><a href="#">Alemania</a></li>
+                  <li><a href="countries/UnitedStates.html">Estados Unidos</a></li>
+                  <li><a href="countries/Australia.html">Australia</a></li>
+                  <li><a href="countries/England.html">Inglaterra</a></li>
+                  <li><a href="countries/Canada.html">Canadá</a></li>
+                  <li><a href="countries/Newzealand.html">Nueva Zelanda</a></li>
+                  <li><a href="countries/Malta.html">Malta</a></li>
+                  <li><a href="countries/Ireland.html">Irlanda</a></li>
+                  <li><a href="countries/Southafrica.html">Sudáfrica</a></li>
+                  <li><a href="countries/France.html">Francia</a></li>
+                  <li><a href="countries/ermany.html">Alemania</a></li>
                 </ul>
               </li>
-              <li><a href="#">Cursos en el Exterior</a>
+              <li><a href="#cursos">Cursos en el Exterior</a>
                 <ul class="dropdown">
                   <li><a href="#">Cursos inglés general e intensivo</a></li>
                   <li><a href="#">Preparación de IELTS y TOEFL</a></li>
@@ -146,11 +146,11 @@
               <li><a href="testimony.html">Testimonios</a></li>
               <li><a href="about-us.html">Acerca de Nosotros</a></li>
               <li><a href="contact.html">Contacto</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="http://www.travelearners.com/blog">Blog</a></li>
             </ul>
             <ul class="list-inline pull-right flip hidden-sm hidden-xs">
               <li>
-                <a class="btn btn-colored btn-flat btn-theme-colored mt-15" href="#">Pide tu cotización</a>
+                <a class="btn btn-colored btn-flat btn-theme-colored mt-15" href="cotizacion.html">Pide tu cotización</a>
               </li>
             </ul>
           </nav>
@@ -490,6 +490,8 @@
               <h3 class="bg-theme-colored p-15 pl-30 mb-0 text-white"> Pide un catálogo gratis</h3>
               <small>¡Solicita ya tu catálogo sobre cursos, opciones de hospedaje, precios, ofertas y  mucho más!</small>
               <form id="catalogo-form" class="bg-light p-30 pb-15" name="job_apply_form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+              <input type=hidden name="oid" value="00DG0000000hoSt">
+              <input type=hidden name="retURL" value="http://www.travelearners.com/thank-you.html">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -836,7 +838,7 @@
               <div class="items">
                 <div class="icon-box p-0">
                   <a class="icon mb-0 mr-0 pull-left" href="#">
-                    <i class="fa fa-space-shuttle font-50 text-theme-colored"></i>
+                    <i class="fa fa-globe font-50 text-theme-colored"></i>
                   </a>
                   <div class="ml-80">
                     <h4 class="icon-box-title mt-15 mb-20">Más de 80 destinos</h4>
@@ -847,7 +849,7 @@
               <div class="items">
                 <div class="icon-box p-0">
                   <a class="icon mb-0 mr-0 pull-left" href="#">
-                    <i class="fa fa-globe font-50 text-theme-colored"></i>
+                    <i class="fa fa-align-justify font-50 text-theme-colored"></i>
                   </a>
                   <div class="ml-80">
                     <h4 class="icon-box-title mt-15 mb-20">Años de experiencia</h4>
@@ -910,7 +912,7 @@
     </section>
 
     <!-- Section: Causes -->
-    <section>
+    <section id="cursos">
       <div class="container pb-sm-10">
         <div class="section-title text-center">
           <div class="row">
@@ -976,7 +978,7 @@
     </section>
 
         <!-- Gallery Grid 3 -->
-    <section class="bg-lighter">
+    <section class="bg-lighter" id="destinos">
       <div class="container">
         <div class="section-content">
           <div class="row">
@@ -995,7 +997,7 @@
                 <!-- Portfolio Item Start -->
                 <div class="gallery-item photography">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="http://placehold.it/450x250" alt="">
+                    <img class="img-fullwidth" src="images/HOME/HOME-Australia.jpg" alt="">
                     <div class="overlay-shade"></div>
                     <div class="icons-holder">
                       <div class="icons-holder-inner">
@@ -1010,12 +1012,12 @@
                 <!-- Portfolio Item Start -->
                 <div class="gallery-item photography">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="http://placehold.it/450x250" alt="">
+                    <img class="img-fullwidth" src="images/HOME/HOME-Newyork.jpg" alt="">
                     <div class="overlay-shade"></div>
                     <div class="icons-holder">
                       <div class="icons-holder-inner">
                         <p class="text-center">ESTADOS UNIDOS</p>
-                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">Más Información</a>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="countries/UnitedStates.html">Más Información</a>
                       </div>
                     </div>
                   </div>
@@ -1025,12 +1027,12 @@
                 <!-- Portfolio Item Start -->
                 <div class="gallery-item photography">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="http://placehold.it/450x250" alt="">
+                    <img class="img-fullwidth" src="images/HOME/HOME-London.jpg" alt="">
                     <div class="overlay-shade"></div>
                     <div class="icons-holder">
                       <div class="icons-holder-inner">
-                        <p class="text-center">INGLATERRA</p>
-                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">Más Información</a>
+                        <p class="title text-center">INGLATERRA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="countries/England.html">Más Información</a>
                       </div>
                     </div>
                   </div>
@@ -1040,12 +1042,12 @@
                 <!-- Portfolio Item Start -->
                 <div class="gallery-item photography">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="http://placehold.it/450x250" alt="">
+                    <img class="img-fullwidth" src="images/HOME/HOME-Toronto.jpg" alt="">
                     <div class="overlay-shade"></div>
                     <div class="icons-holder">
                       <div class="icons-holder-inner">
                         <p class="text-center">CANADÁ</p>
-                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">Más Información</a>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="countries/Canada.html">Más Información</a>
                       </div>
                     </div>
                   </div>
@@ -1055,12 +1057,12 @@
                 <!-- Portfolio Item Start -->
                 <div class="gallery-item photography">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="http://placehold.it/450x250" alt="">
+                    <img class="img-fullwidth" src="images/HOME/HOME-Berlin.jpg" alt="">
                     <div class="overlay-shade"></div>
                     <div class="icons-holder">
                       <div class="icons-holder-inner">
-                        <p class="text-center">MALTA</p>
-                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">Más Información</a>
+                        <p class="text-center">ALEMANIA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="countries/Germany.html">Más Información</a>
                       </div>
                     </div>
                   </div>
@@ -1070,17 +1072,77 @@
                 <!-- Portfolio Item Start -->
                 <div class="gallery-item photography">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="http://placehold.it/450x250" alt="">
+                    <img class="img-fullwidth" src="images/HOME/HOME-Paris.jpg" alt="">
                     <div class="overlay-shade"></div>
                     <div class="icons-holder">
                       <div class="icons-holder-inner">
                         <p class="text-center">FRANCIA</p>
-                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="#">Más Información</a>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="countries/France.html">Más Información</a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Portfolio Item End -->
+
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="images/HOME/HOME-Newzealand.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">NUEVA ZELANDA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="countries/Newzealand.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="images/HOME/HOME-Malta.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">MALTA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="countries/Malta.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="images/HOME/HOME-Ireland.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">IRLANDA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="countries/Ireland.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start 
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="images/HOME/HOME-Southafrica.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">IRLANDA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="countries/Southafrica.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  Portfolio Item End -->
               </div>
               <!-- End Portfolio Gallery Grid -->
 
@@ -1100,37 +1162,31 @@
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
             <img class="mt-10 mb-20" alt="" src="images/logo.png">
-            <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+            <p>Bogotá: Calle 116 #45-67</p>
+            <p>Cali: Calle 22N # 5b-21 Local 201</p>
             <ul class="list-inline mt-5">
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="#">contact@yourdomain.com</a> </li>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-colored mr-5"></i> <a class="text-gray" href="#">www.yourdomain.com</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-300-1720">Bogotá: (1) 300 1720</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-345-0589">Cali: (2) 345 0589</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="info@travelearners.com">info@travelearners.com</a> </li>
             </ul>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <h5 class="widget-title line-bottom">Latest News</h5>
+            <h5 class="widget-title line-bottom">Próximos Eventos</h5>
             <div class="latest-posts">
               <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
+                <a href="#" class="post-thumb"><img alt="" src="images/HOME/HOME-Eventfooter.jpg"></a>
                 <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="#">Sustainable Construction</a></h5>
-                  <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                  <h5 class="post-title mt-0 mb-5"><a href="#">CHARLA INFORMATIVA -- CALI</a></h5>
+                  <p class="post-date mb-0 font-12">Abril 01, 2017</p>
                 </div>
               </article>
               <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
+                <a href="#" class="post-thumb"><img alt="" src="images/HOME/HOME-Eventfooter1.jpg"></a>
                 <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="#">Industrial Coatings</a></h5>
-                  <p class="post-date mb-0 font-12">Mar 08, 2015</p>
-                </div>
-              </article>
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb"><img alt="" src="http://placehold.it/80x55"></a>
-                <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="#">Storefront Installations</a></h5>
-                  <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                  <h5 class="post-title mt-0 mb-5"><a href="#">CHARLA INFORMATIVA -- BOGOTÁ</a></h5>
+                  <p class="post-date mb-0 font-12">Mayo 04, 2017</p>
                 </div>
               </article>
             </div>
@@ -1138,32 +1194,26 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <h5 class="widget-title line-bottom">Useful Links</h5>
+            <h5 class="widget-title line-bottom">Enlaces útiles</h5>
             <ul class="list angle-double-right list-border">
-              <li><a href="#">Body Building</a></li>
-              <li><a href="#">Fitness Classes</a></li>
-              <li><a href="#">Weight lifting</a></li>
-              <li><a href="#">Yoga Courses</a></li>
-              <li><a href="#">Training</a></li>              
+              <li><a href="#destinos">Destinos</a></li>
+              <li><a href="#cursos">Cursos en el exterior</a></li>
+              <li><a href="testimony.html">Testimonios</a></li>
+              <li><a href="about-us.html">Acerca de nosotros</a></li>
+              <li><a href="contact.html">Contacto</a></li>              
             </ul>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <h5 class="widget-title line-bottom">Opening Hours</h5>
+            <h5 class="widget-title line-bottom">Horario de Atención</h5>
             <div class="opening-hours">
               <ul class="list-border">
-                <li class="clearfix"> <span> Mon - Tues :  </span>
-                  <div class="value pull-right"> 6.00 am - 10.00 pm </div>
+                <li class="clearfix"> <span> Lunes a Viernes :  </span>
+                  <div class="value pull-right"> 9.00 am - 6.00 pm </div>
                 </li>
-                <li class="clearfix"> <span> Wednes - Thurs :</span>
-                  <div class="value pull-right"> 8.00 am - 6.00 pm </div>
-                </li>
-                <li class="clearfix"> <span> Fri : </span>
-                  <div class="value pull-right"> 3.00 pm - 8.00 pm </div>
-                </li>
-                <li class="clearfix"> <span> Sun : </span>
-                  <div class="value pull-right"> Colosed </div>
+                <li class="clearfix"> <span> Sábados :</span>
+                  <div class="value pull-right"> 9.00 am - 12.00 pm </div>
                 </li>
               </ul>
             </div>
@@ -1173,58 +1223,35 @@
       <div class="row mt-10">
         <div class="col-md-5">
           <div class="widget dark">
-            <h5 class="widget-title mb-10">Subscribe Us</h5>
-            <!-- Mailchimp Subscription Form Starts Here -->
-            <form id="mailchimp-subscription-form-footer" class="newsletter-form">
+            <h5 class="widget-title mb-10">Comparte tu correo</h5>
+            <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="newsletter-form">
+              <input type=hidden name="oid" value="00DG0000000hoSt">
+              <input type=hidden name="retURL" value="http://www.travelearners.com/thank-you.html">
               <div class="input-group">
-                <input type="email" value="" name="EMAIL" placeholder="Your Email" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer">
+                <input type="email" value="" name="email" placeholder="Correo electronico" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer">
                 <span class="input-group-btn">
-                  <button data-height="45px" class="btn btn-colored btn-theme-colored btn-xs m-0 font-14" type="submit">Subscribe</button>
+                  <button data-height="45px" class="btn btn-colored btn-theme-colored btn-xs m-0 font-14" type="submit" name="submit">Enviar</button>
                 </span>
               </div>
             </form>
-            <!-- Mailchimp Subscription Form Validation-->
-            <script type="text/javascript">
-              $('#mailchimp-subscription-form-footer').ajaxChimp({
-                  callback: mailChimpCallBack,
-                  url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
-              });
-
-              function mailChimpCallBack(resp) {
-                  // Hide any previous response text
-                  var $mailchimpform = $('#mailchimp-subscription-form-footer'),
-                      $response = '';
-                  $mailchimpform.children(".alert").remove();
-                  if (resp.result === 'success') {
-                      $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                  } else if (resp.result === 'error') {
-                      $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                  }
-                  $mailchimpform.prepend($response);
-              }
-            </script>
-            <!-- Mailchimp Subscription Form Ends Here -->
           </div>
         </div>
         <div class="col-md-3 col-md-offset-1">
           <div class="widget dark">
-            <h5 class="widget-title mb-10">Call Us Now</h5>
+            <h5 class="widget-title mb-10">Contáctanos</h5>
             <div class="text-gray">
-              +61 3 1234 5678 <br>
-              +12 3 1234 5678
+              (1) 300 1720 <br>
+              (2) 345 0589
             </div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="widget dark">
-            <h5 class="widget-title mb-10">Connect With Us</h5>
+            <h5 class="widget-title mb-10">Encuentranos en:</h5>
             <ul class="styled-icons icon-dark icon-circled icon-sm">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-skype"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+              <li><a href="https://www.facebook.com/travelearnerscolombia"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/travelearners"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/TRAVELEARNERS/"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>
