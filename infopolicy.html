@@ -129,7 +129,7 @@
                   <li><a href="countries/Ireland.html">Irlanda</a></li>
                   <li><a href="countries/Southafrica.html">Sudáfrica</a></li>
                   <li><a href="countries/France.html">Francia</a></li>
-                  <li><a href="countries/ermany.html">Alemania</a></li>
+                  <li><a href="countries/Germany.html">Alemania</a></li>
                 </ul>
               </li>
               <li><a href="#cursos">Cursos en el Exterior</a>
@@ -230,13 +230,24 @@
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
             <img class="mt-10 mb-20" alt="" src="images/logo.png">
-            <p>Bogotá: Calle 116 #45-67</p>
-            <p>Cali: Calle 22N # 5b-21 Local 201</p>
-            <ul class="list-inline mt-5">
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-300-1720">Bogotá: (1) 300 1720</a> </li>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-345-0589">Cali: (2) 345 0589</a> </li>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="info@travelearners.com">info@travelearners.com</a> </li>
-            </ul>
+            <select id="selectMe" class="RegionSelectBox">
+              <option value="option1" class="RegionSelect">Bogota</option>
+              <option value="option2" class="RegionSelect">Cali</option>
+            </select>
+            <div id="option1" class="group">  
+              <ul class="list-inline mt-5">
+                <li class="m-0 pl-10 pr-10"><i class="fa fa-map-o text-theme-colored mr-5"></i>Calle 116 #45-67</li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-300-1720">(1) 300 1720</a> </li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="info@travelearners.com">info@travelearners.com</a> </li>
+              </ul>
+            </div>
+            <div id="option2" class="group">
+              <ul class="list-inline mt-5">
+                <li class="m-0 pl-10 pr-10"><i class="fa fa-map-o text-theme-colored mr-5"></i>Calle 22N # 5b-21 Local 201</li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-345-0589">(2) 345 0589</a> </li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="info@travelearners.com">info@travelearners.com</a> </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
@@ -305,13 +316,7 @@
           </div>
         </div>
         <div class="col-md-3 col-md-offset-1">
-          <div class="widget dark">
-            <h5 class="widget-title mb-10">Contáctanos</h5>
-            <div class="text-gray">
-              (1) 300 1720 <br>
-              (2) 345 0589
-            </div>
-          </div>
+          <p><i>"Experience, travel - these are an education in themselves"</i> -- Euripides</p>
         </div>
         <div class="col-md-3">
           <div class="widget dark">
@@ -333,19 +338,7 @@
 <!-- Footer Scripts -->
 <!-- JS | Custom script for all pages -->
 <script src="js/custom.js"></script>
-
-<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
-      (Load Extensions only on Local File Systems ! 
-       The following part can be removed on Server for On Demand Loading) -->
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

@@ -968,7 +968,7 @@ section > .container-fluid {
   }
 }
 .menuzord-brand img {
-  max-height: 38px;
+  max-height: 70px;
 }
 /* -------- Inner Header ---------- */
 .inner-header .title {
@@ -6384,5 +6384,17 @@ blockquote p {
   border-color: #eeeeee;
   color: #333333;
 }
+
+.RegionSelectBox {
+  background: #222222; !important
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  display: block;
+  padding; 20px 20px 0;
+  box-sizing: border-box;
+}
+
 
 /*# sourceMappingURL=style-main.css.map */
