@@ -115,6 +115,9 @@
 .bg-black {
   background-color: #000 !important;
 }
+.bg-dark {
+  background-color: #25282a !important;
+}
 .divider-dark {
   background-color: #252525 !important;
 }

@@ -13,8 +13,14 @@ Boxed Skin
 /* Active/hover state (menu items) */
 .menuzord-menu > li.active > a,
 .menuzord-menu > li:hover > a{
-	background: #333;
-	color: #fff;
+	background: #f5f5f5;
+	color: #25282a;
+}
+
+.drop-light > li.active > a,
+.drop-light > li:hover > a{
+	background: #f5f5f5;
+	color: #25282a;
 }
 
 /* Dropdown */
