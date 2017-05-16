@@ -96,6 +96,10 @@
 .text-white-fe {
   color: #fefefe !important;
 }
+.text-red {
+  color: #e4002b !important;
+  font-size: 50px;
+}
 /* -------- Solid Color Background ---------- */
 .bg-deep {
   background-color: #f1f1f1 !important;

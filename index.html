@@ -26,6 +26,7 @@
 <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link href="css/css-plugin-collections.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/alertify.min.css" />
 <!-- CSS | menuzord megamenu skins -->
 <link id="menuzord-menu-skins" href="css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
 <!-- CSS | Main style file -->
@@ -512,13 +513,13 @@
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="email">Correo electronico <small>*</small></label>
-                      <input id="email" name="email" class="form-control" type="text" placeholder="Correo electrónico">
+                      <input id="email" name="email" class="form-control" type="text" placeholder="Correo electrónico" onblur="validateEmail(this);" onchange="javascript:document.getElementById('email').value = this.value;">
                     </div>
                   </div>               
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="00NG000000ADjTt">Teléfono <small>*</small></label>
-                      <input id="00NG000000ADjTt" name="00NG000000ADjTt" class="form-control" type="text" placeholder="Teléfono">
+                      <input id="00NG000000ADjTt" name="00NG000000ADjTt" class="form-control" type="text">
                     </div>
                   </div>    
                 </div>
@@ -1273,6 +1274,37 @@
 <!-- JS | Custom script for all pages -->
 <script src="js/custom.js"></script>
 <script src="js/main.js"></script>
+<script src="js/alertify.min.js"></script>
+<script type="text/javascript">
+  function validateEmail(emailField){
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(emailField.value) == false) 
+    {
+      alertify.alert('Ingresa un email válido');
+      return false;
+    }
+    return true;
+  }
+</script>
+<script type="text/javascript"> 
+  $(document).ready(function(){
+    $("#catalogo-form").submit(function () {
+      if($("#00NG000000ADjTt").val().length < 1) {
+        alertify.alert("Por favor ingresa tu teléfono");
+        return false;
+      }
+      if(isNaN($("#00NG000000ADjTt").val())) {
+        alertify.alert("El teléfono solo debe contener números");
+        return false;
+      }
+      if($("#00NG000000ADjTt").val().length < 7) {
+        alertify.alert("Ingresa un teléfono válido");
+        return false;
+      }
+      return true;
+    });
+  });
+</script>
 
 <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
       (Load Extensions only on Local File Systems ! 
