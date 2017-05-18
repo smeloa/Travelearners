@@ -24,6 +24,7 @@
 <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link href="css/css-plugin-collections.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/alertify.min.css" />
 <!-- CSS | menuzord megamenu skins -->
 <link id="menuzord-menu-skins" href="css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
 <!-- CSS | Main style file -->
@@ -126,6 +127,7 @@
                   <li><a href="Countries/France.html">Francia</a></li>
                   <li><a href="Countries/England.html">Inglaterra</a></li>
                   <li><a href="Countries/Ireland.html">Irlanda</a></li>
+                  <li><a href="Countries/Italy.html">Italia</a></li>
                   <li><a href="Countries/Malta.html">Malta</a></li>
                   <li><a href="Countries/Newzealand.html">Nueva Zelanda</a></li>        
                   <li><a href="Countries/Southafrica.html">Sudáfrica</a></li>
@@ -201,7 +203,7 @@
             <p>¿Tienes alguna pregunta sobre cómo realizar tus estudios en el exterior?</p>
             <p>Déjanos tus datos y te contactaremos cuanto antes para brindarte la información que necesitas.</p>
             <!-- Contact Form -->
-            <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" method="post">
+            <form id="contact-form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" method="post">
               <input type=hidden name="oid" value="00DG0000000hoSt">
               <input type=hidden name="retURL" value="http://www.travelearners.com/thank-you.php">
 
@@ -224,7 +226,7 @@
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label for="email">Correo <small>*</small></label>
-                    <input id="email" name="email" class="form-control required email" type="email" placeholder="Correo electrónico" required>
+                    <input id="email" name="email" class="form-control required email" type="email" placeholder="Correo electrónico" onblur="validateEmail(this);" onchange="javascript:document.getElementById('email').value = this.value;" required>
                   </div>
                 </div>
                 <div class="col-sm-6">
@@ -738,34 +740,22 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <h5 class="widget-title line-bottom">Próximos Eventos</h5>
-            <div class="latest-posts">
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb"><img alt="" src="images/HOME/HOME-Eventfooter.jpg"></a>
-                <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="events/Bogota-Mayo6-2017.html">CHARLA INFORMATIVA -- BOGOTÁ</a></h5>
-                  <p class="post-date mb-0 font-12">>Mayo 06, 2017</p>
-                </div>
-              </article>
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb"><img alt="" src="images/HOME/HOME-Eventfooter1.jpg"></a>
-                <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="events/Bogota-Julio29-2017.html">CHARLA INFORMATIVA -- BOGOTÁ</a></h5>
-                  <p class="post-date mb-0 font-12">Julio 29, 2017</p>
-                </div>
-              </article>
-            </div>
+            <h5 class="widget-title line-bottom">Enlaces útiles</h5>
+            <ul class="list angle-double-right list-border">
+              <li><a href="#destinos">Destinos</a></li>
+              <li><a href="#cursos">Cursos en el exterior</a></li>
+              <li><a href="testimony.html">Testimonios</a></li>
+              <li><a href="about-us.html">Acerca de nosotros</a></li>
+              <li><a href="contact.html">Contacto</a></li>              
+            </ul>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <h5 class="widget-title line-bottom">Enlaces útiles</h5>
             <ul class="list angle-double-right list-border">
-              <li><a href="index.html#destinos">Destinos</a></li>
-              <li><a href="index.html#cursos">Cursos en el exterior</a></li>
-              <li><a href="testimony.html">Testimonios</a></li>
-              <li><a href="about-us.html">Acerca de nosotros</a></li>
-              <li><a href="contact.html">Contacto</a></li>              
+              <li><a href="cotizacion.html">Pide tu cotización</a></li>
+              <li><a href="http://www.travelearners.com/blog">Blog</a></li>
+              <li><a href="infopolicy.html">Política del manejo de la información</a></li>             
             </ul>
           </div>
         </div>
@@ -793,7 +783,7 @@
               <input type=hidden name="oid" value="00DG0000000hoSt">
               <input type=hidden name="retURL" value="http://www.travelearners.com/thank-you.html">
               <div class="input-group">
-                <input type="email" value="" name="email" placeholder="Correo electronico" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer">
+                <input type="email" value="" name="email" placeholder="Correo electronico" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer" onblur="validateEmail(this);" onchange="javascript:document.getElementById('email').value = this.value;" required>
                 <span class="input-group-btn">
                   <button data-height="45px" class="btn btn-colored btn-theme-colored btn-xs m-0 font-14" type="submit" name="submit">Enviar</button>
                 </span>
@@ -825,5 +815,36 @@
 <!-- JS | Custom script for all pages -->
 <script src="js/custom.js"></script>
 <script src="js/main.js"></script>
+<script src="js/alertify.min.js"></script>
+<script type="text/javascript">
+  function validateEmail(emailField){
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(emailField.value) == false) 
+    {
+      alertify.alert('Ingresa un email válido');
+      return false;
+    }
+    return true;
+  }
+</script>
+<script type="text/javascript"> 
+  $(document).ready(function(){
+    $("#contact-form").submit(function () {
+      if($("#00NG000000ADjTt").val().length < 1) {
+        alertify.alert("Por favor ingresa tu teléfono");
+        return false;
+      }
+      if(isNaN($("#00NG000000ADjTt").val())) {
+        alertify.alert("El teléfono solo debe contener números");
+        return false;
+      }
+      if($("#00NG000000ADjTt").val().length < 7) {
+        alertify.alert("Ingresa un teléfono válido");
+        return false;
+      }
+      return true;
+    });
+  });
+</script>
 </body>
 </html>

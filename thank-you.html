@@ -26,6 +26,7 @@
 <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link href="css/css-plugin-collections.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/alertify.min.css" />
 <!-- CSS | menuzord megamenu skins -->
 <link id="menuzord-menu-skins" href="css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
 <!-- CSS | Main style file -->
@@ -128,6 +129,7 @@
                   <li><a href="Countries/France.html">Francia</a></li>
                   <li><a href="Countries/England.html">Inglaterra</a></li>
                   <li><a href="Countries/Ireland.html">Irlanda</a></li>
+                  <li><a href="Countries/Italy.html">Italia</a></li>
                   <li><a href="Countries/Malta.html">Malta</a></li>
                   <li><a href="Countries/Newzealand.html">Nueva Zelanda</a></li>        
                   <li><a href="Countries/Southafrica.html">Sudáfrica</a></li>
@@ -236,6 +238,15 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
+            <ul class="list angle-double-right list-border">
+              <li><a href="cotizacion.html">Pide tu cotización</a></li>
+              <li><a href="http://www.travelearners.com/blog">Blog</a></li>
+              <li><a href="infopolicy.html">Política del manejo de la información</a></li>             
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
             <h5 class="widget-title line-bottom">Horario de Atención</h5>
             <div class="opening-hours">
               <ul class="list-border">
@@ -258,7 +269,7 @@
               <input type=hidden name="oid" value="00DG0000000hoSt">
               <input type=hidden name="retURL" value="http://www.travelearners.com/thank-you.html">
               <div class="input-group">
-                <input type="email" value="" name="email" placeholder="Correo electronico" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer">
+                <input type="email" value="" name="email" placeholder="Correo electronico" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer" onblur="validateEmail(this);" onchange="javascript:document.getElementById('email').value = this.value;" required>
                 <span class="input-group-btn">
                   <button data-height="45px" class="btn btn-colored btn-theme-colored btn-xs m-0 font-14" type="submit" name="submit">Enviar</button>
                 </span>
@@ -290,6 +301,36 @@
 <!-- JS | Custom script for all pages -->
 <script src="js/custom.js"></script>
 <script src="js/main.js"></script>
-
+<script src="js/alertify.min.js"></script>
+<script type="text/javascript">
+  function validateEmail(emailField){
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(emailField.value) == false) 
+    {
+      alertify.alert('Ingresa un email válido');
+      return false;
+    }
+    return true;
+  }
+</script>
+<script type="text/javascript"> 
+  $(document).ready(function(){
+    $("#catalogo-form").submit(function () {
+      if($("#00NG000000ADjTt").val().length < 1) {
+        alertify.alert("Por favor ingresa tu teléfono");
+        return false;
+      }
+      if(isNaN($("#00NG000000ADjTt").val())) {
+        alertify.alert("El teléfono solo debe contener números");
+        return false;
+      }
+      if($("#00NG000000ADjTt").val().length < 7) {
+        alertify.alert("Ingresa un teléfono válido");
+        return false;
+      }
+      return true;
+    });
+  });
+</script>
 </body>
 </html>

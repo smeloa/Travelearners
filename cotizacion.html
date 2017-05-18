@@ -26,6 +26,7 @@
 <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link href="css/css-plugin-collections.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/alertify.min.css" />
 <!-- CSS | menuzord megamenu skins -->
 <link id="menuzord-menu-skins" href="css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
 <!-- CSS | Main style file -->
@@ -128,6 +129,7 @@
                   <li><a href="Countries/France.html">Francia</a></li>
                   <li><a href="Countries/England.html">Inglaterra</a></li>
                   <li><a href="Countries/Ireland.html">Irlanda</a></li>
+                  <li><a href="Countries/Italy.html">Italia</a></li>
                   <li><a href="Countries/Malta.html">Malta</a></li>
                   <li><a href="Countries/Newzealand.html">Nueva Zelanda</a></li>        
                   <li><a href="Countries/Southafrica.html">Sudáfrica</a></li>
@@ -167,7 +169,7 @@
             <p>¿Tienes alguna pregunta sobre cómo realizar tus estudios en el exterior?</p>
             <p>Déjanos tus datos y te contactaremos cuanto antes para brindarte la información que necesitas.</p>
             <!-- Contact Form -->
-            <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" method="post">
+            <form id="cotizacion-form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" method="post">
               <input type=hidden name="oid" value="00DG0000000hoSt">
               <input type=hidden name="retURL" value="http://www.travelearners.com/thank-you.php">
 
@@ -190,7 +192,7 @@
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label for="email">Correo <small>*</small></label>
-                    <input id="email" name="email" class="form-control required email" type="email" placeholder="Correo electrónico" required>
+                    <input id="email" name="email" class="form-control required email" type="email" placeholder="Correo electrónico" onblur="validateEmail(this);" onchange="javascript:document.getElementById('email').value = this.value;" required>
                   </div>
                 </div>
                 <div class="col-sm-6">
@@ -506,24 +508,24 @@
                     <label>¿Dónde te gustaría estudiar?  <small>*</small></label>
                       <select id="00N0f00000FcTos" name="00N0f00000FcTos" title="Destino" class="form-control" required>
                         <option value="">--Selecciona--</option>
-                        <option value="AU-ADE">AU-ADE</option>
-                        <option value="AU-BRS">AU-BRS</option>
+                        <option value="AU-ADE">Australia-Adelaida</option>
+                        <option value="AU-BRS">Australia-Brisbane</option>
                         <option value="AU-CAI">AU-CAI</option>
                         <option value="AU-GCT">AU-GCT</option>
-                        <option value="AU-MEL">AU-MEL</option>
-                        <option value="AU-PER">AU-PER</option>
+                        <option value="AU-MEL">Australia-Melbourne</option>
+                        <option value="AU-PER">Australia-Perth</option>
                         <option value="AU-SUR">AU-SUR</option>
-                        <option value="AU-SYD">AU-SYD</option>
-                        <option value="CA-CAL">CA-CAL</option>
-                        <option value="CA-MON">CA-MON</option>
-                        <option value="CA-OTT">CA-OTT</option>
-                        <option value="CA-TOO">CA-TOO</option>
-                        <option value="CA-VAN">CA-VAN</option>
-                        <option value="CA-VIC">CA-VIC</option>
+                        <option value="AU-SYD">Australia-Sydney</option>
+                        <option value="CA-CAL">Canadá-Calgary</option>
+                        <option value="CA-MON">Canadá-Montreal</option>
+                        <option value="CA-OTT">Canadá-Ottawa</option>
+                        <option value="CA-TOO">Canadá-Toronto</option>
+                        <option value="CA-VAN">Canadá-Vancouver</option>
+                        <option value="CA-VIC">Canadá-Victoria</option>
                         <option value="CH-ZUR">CH-ZUR</option>
                         <option value="CN-BEI">CN-BEI</option>
-                        <option value="DE-BER">DE-BER</option>
-                        <option value="DE-FRA">DE-FRA</option>
+                        <option value="DE-BER">Alemania-Berlin</option>
+                        <option value="DE-FRA">Alemania-Frankfurt</option>
                         <option value="DE-HAM">DE-HAM</option>
                         <option value="DE-HAN">DE-HAN</option>
                         <option value="DE-KON">DE-KON</option>
@@ -571,19 +573,19 @@
                         <option value="UK-TOR">UK-TOR</option>
                         <option value="UK-WIN">UK-WIN</option>
                         <option value="UK-WOR">UK-WOR</option>
-                        <option value="US-ATL">US-ATL</option>
+                        <option value="US-ATL">Estados Unidos-Atlanta</option>
                         <option value="US-BER">US-BER</option>
-                        <option value="US-BOS">US-BOS</option>
+                        <option value="US-BOS">Estados Unidos-Boston</option>
                         <option value="US-CHI">US-CHI</option>
                         <option value="US-DEN">US-DEN</option>
                         <option value="US-FLA">US-FLA</option>
-                        <option value="US-HOU">US-HOU</option>
+                        <option value="US-HOU">Estados Unidos-Houston</option>
                         <option value="US-HWI">US-HWI</option>
                         <option value="US-KAN">US-KAN</option>
                         <option value="US-LAV">US-LAV</option>
                         <option value="US-LAX">US-LAX</option>
                         <option value="US-MAD">US-MAD</option>
-                        <option value="US-MIA">US-MIA</option>
+                        <option value="US-MIA">Estados Unidos-Miami</option>
                         <option value="US-NAS">US-NAS</option>
                         <option value="US-NJS">US-NJS</option>
                         <option value="US-NYC">US-NYC</option>
@@ -877,27 +879,6 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <h5 class="widget-title line-bottom">Próximos Eventos</h5>
-            <div class="latest-posts">
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb"><img alt="" src="images/HOME/HOME-Eventfooter.jpg"></a>
-                <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="events/Bogota-Mayo6-2017.html">CHARLA INFORMATIVA -- BOGOTÁ</a></h5>
-                  <p class="post-date mb-0 font-12">>Mayo 06, 2017</p>
-                </div>
-              </article>
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb"><img alt="" src="images/HOME/HOME-Eventfooter1.jpg"></a>
-                <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="events/Bogota-Julio29-2017.html">CHARLA INFORMATIVA -- BOGOTÁ</a></h5>
-                  <p class="post-date mb-0 font-12">Julio 29, 2017</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="widget dark">
             <h5 class="widget-title line-bottom">Enlaces útiles</h5>
             <ul class="list angle-double-right list-border">
               <li><a href="#destinos">Destinos</a></li>
@@ -905,6 +886,15 @@
               <li><a href="testimony.html">Testimonios</a></li>
               <li><a href="about-us.html">Acerca de nosotros</a></li>
               <li><a href="contact.html">Contacto</a></li>              
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <ul class="list angle-double-right list-border">
+              <li><a href="cotizacion.html">Pide tu cotización</a></li>
+              <li><a href="http://www.travelearners.com/blog">Blog</a></li>
+              <li><a href="infopolicy.html">Política del manejo de la información</a></li>             
             </ul>
           </div>
         </div>
@@ -932,7 +922,7 @@
               <input type=hidden name="oid" value="00DG0000000hoSt">
               <input type=hidden name="retURL" value="http://www.travelearners.com/thank-you.html">
               <div class="input-group">
-                <input type="email" value="" name="email" placeholder="Correo electronico" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer">
+                <input type="email" value="" name="email" placeholder="Correo electronico" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer" onblur="validateEmail(this);" onchange="javascript:document.getElementById('email').value = this.value;" required>
                 <span class="input-group-btn">
                   <button data-height="45px" class="btn btn-colored btn-theme-colored btn-xs m-0 font-14" type="submit" name="submit">Enviar</button>
                 </span>
@@ -964,5 +954,36 @@
 <!-- JS | Custom script for all pages -->
 <script src="js/custom.js"></script>
 <script src="js/main.js"></script>
+<script src="js/alertify.min.js"></script>
+<script type="text/javascript">
+  function validateEmail(emailField){
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(emailField.value) == false) 
+    {
+      alertify.alert('Ingresa un email válido');
+      return false;
+    }
+    return true;
+  }
+</script>
+<script type="text/javascript"> 
+  $(document).ready(function(){
+    $("#cotizacion-form").submit(function () {
+      if($("#00NG000000ADjTt").val().length < 1) {
+        alertify.alert("Por favor ingresa tu teléfono");
+        return false;
+      }
+      if(isNaN($("#00NG000000ADjTt").val())) {
+        alertify.alert("El teléfono solo debe contener números");
+        return false;
+      }
+      if($("#00NG000000ADjTt").val().length < 7) {
+        alertify.alert("Ingresa un teléfono válido");
+        return false;
+      }
+      return true;
+    });
+  });
+</script>
 </body>
 </html>
