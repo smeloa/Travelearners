@@ -1001,6 +1001,11 @@ section > .container-fluid {
   color: #777777;
 }
 /* -------- Header Nav ---------- */
+
+.social-icon {
+  font-size: 30px;
+}
+
 .header-nav {
   position: relative;
 }
@@ -1060,7 +1065,8 @@ section > .container-fluid {
 }
 @media only screen and (max-width: 900px) {
   .menuzord-menu {
-    background: #fff;
+    background: #333 !important;
+    border: 0.5px solid #333;
   }
 }
 /* -------- Scrolltofixed ---------- */
@@ -6365,7 +6371,7 @@ blockquote p {
   background: #fafafa;
 }
 .footer a {
-  color: #808080;
+  color: #fff;
 }
 .footer a:focus,
 .footer a:hover,

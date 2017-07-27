@@ -78,9 +78,9 @@
           <div class="col-md-4">
             <div class="widget no-border m-0">
               <ul class="styled-icons icon-dark icon-circled icon-theme-colored icon-sm flip sm-pull-none sm-text-center mt-sm-15">
-                <li><a href="https://www.facebook.com/travelearnerscolombia"><i class="fa fa-facebook text-white"></i></a></li>
-                <li><a href="https://twitter.com/travelearners"><i class="fa fa-twitter text-white"></i></a></li>
-                <li><a href="https://www.instagram.com/TRAVELEARNERS/"><i class="fa fa-instagram text-white"></i></a></li>
+                <li><a href="https://www.facebook.com/travelearnerscolombia"><i class="fa fa-facebook text-white social-icon"></i></a></li>
+                <li><a href="https://twitter.com/travelearners"><i class="fa fa-twitter text-white social-icon"></i></a></li>
+                <li><a href="https://www.instagram.com/TRAVELEARNERS/"><i class="fa fa-instagram text-white social-icon"></i></a></li>
               </ul>
             </div>
           </div>
@@ -138,14 +138,14 @@
               </li>
               <li><a href="../index.html#cursos">Cursos en el Exterior</a>
                 <ul class="dropdown">
+                  <li><a href="../Programs/InglesIntensivo.html">Cursos inglés general e intensivo</a></li>
+                  <li><a href="../Programs/PreparacionTOEFL.html">Preparación de IELTS y TOEFL</a></li>
+                  <li><a href="../Programs/PreparacionCAMBRIDGE.html">Preparación de exámenes Cambridge</a></li>
+                  <li><a href="../Programs/InglesNegocios.html">Inglés de negocios</a></li>
+                  <li><a href="../Programs/PreparacionUniversitaria.html">Preparación universitaria</a></li>
                   <li><a href="../Programs/CampamentosVerano.html">Campamentos de verano</a></li>
                   <li><a href="../Programs/CursosIdiomas.html">Cursos de francés, alemán y otros idiomas</a></li>
-                  <li><a href="../Programs/InglesIntensivo.html">Cursos inglés general e intensivo</a></li>
                   <li><a href="../Programs/EducacionExterior.html">Educación superior en el exterior</a></li>
-                  <li><a href="../Programs/InglesNegocios.html">Inglés de negocios</a></li>
-                  <li><a href="../Programs/PreparacionCAMBRIDGE.html">Preparación de exámenes Cambridge</a></li>
-                  <li><a href="../Programs/PreparacionTOEFL.html">Preparación de IELTS y TOEFL</a></li>
-                  <li><a href="../Programs/PreparacionUniversitaria.html">Preparación universitaria</a></li>
                 </ul>
               </li>
               <li><a href="../testimony.html">Testimonios</a></li>
@@ -528,6 +528,13 @@
                   </div>    
                 </div>
                 <div class="row">   
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <input type="checkbox" required  checked="checked" name="emailOptOut"  value="1"/> Estoy de acuerdo con la política de manejo de la información
+                    </div>
+                  </div> 
+                </div>
+                <div class="row">   
                   <div class="col-sm-12 text-center">
                     <a href="infopolicy.html" class="font-13">Política del manejo de la información</a>
                   </div> 
@@ -544,40 +551,30 @@
   </div>
   <!-- end main-content -->
   
-    <!-- Footer -->
+  <!-- Footer -->
   <footer id="footer" class="footer bg-black-222">
     <div class="container pt-70 pb-40">
       <div class="row border-bottom-black">
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <img class="mt-10 mb-20" alt="" src="../images/logo.png">
-            <p>Bogotá: Calle 116 #45-67</p>
-            <p>Cali: Calle 22N # 5b-21 Local 201</p>
-            <ul class="list-inline mt-5">
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-300-1720">Bogotá: (1) 300 1720</a> </li>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-345-0589">Cali: (2) 345 0589</a> </li>
-              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="info@travelearners.com">info@travelearners.com</a> </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="widget dark">
-            <h5 class="widget-title line-bottom">Próximos Eventos</h5>
-            <div class="latest-posts">
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb"><img alt="" src="../images/HOME/HOME-Eventfooter.jpg"></a>
-                <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="../events/Bogota-Mayo6-2017.html">CHARLA INFORMATIVA -- BOGOTÁ</a></h5>
-                  <p class="post-date mb-0 font-12">>Mayo 06, 2017</p>
-                </div>
-              </article>
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb"><img alt="" src="../images/HOME/HOME-Eventfooter1.jpg"></a>
-                <div class="post-right">
-                  <h5 class="post-title mt-0 mb-5"><a href="../events/Bogota-Julio29-2017.html">CHARLA INFORMATIVA -- BOGOTÁ</a></h5>
-                  <p class="post-date mb-0 font-12">Julio 29, 2017</p>
-                </div>
-              </article>
+            <img class="mt-10 mb-20" alt="" src="../images/Logo-White.png">
+            <select id="selectMe" class="RegionSelectBox">
+              <option value="option1" class="RegionSelect">Bogota</option>
+              <option value="option2" class="RegionSelect">Cali</option>
+            </select>
+            <div id="option1" class="group">  
+              <ul class="list-inline mt-5">
+                <li class="m-0 pl-10 pr-10"><i class="fa fa-map-o text-theme-colored mr-5"></i>Calle 116 #45-67</li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-300-1720">(1) 300 1720</a> </li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="info@travelearners.com">info@travelearners.com</a> </li>
+              </ul>
+            </div>
+            <div id="option2" class="group">
+              <ul class="list-inline mt-5">
+                <li class="m-0 pl-10 pr-10"><i class="fa fa-map-o text-theme-colored mr-5"></i>Calle 22N # 5b-21 Local 201</li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i> <a class="text-gray" href="tel:031-345-0589">(2) 345 0589</a> </li>
+                <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored mr-5"></i> <a class="text-gray" href="info@travelearners.com">info@travelearners.com</a> </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -590,6 +587,15 @@
               <li><a href="../testimony.html">Testimonios</a></li>
               <li><a href="../about-us.html">Acerca de nosotros</a></li>
               <li><a href="../contact.html">Contacto</a></li>              
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <ul class="list angle-double-right list-border">
+              <li><a href="../cotizacion.html">Pide tu cotización</a></li>
+              <li><a href="http://www.travelearners.com/blog">Blog</a></li>
+              <li><a href="../infopolicy.html">Política del manejo de la información</a></li>          
             </ul>
           </div>
         </div>
@@ -611,28 +617,9 @@
       </div>
       <div class="row mt-10">
         <div class="col-md-5">
-          <div class="widget dark">
-            <h5 class="widget-title mb-10">Comparte tu correo</h5>
-            <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="newsletter-form">
-              <input type=hidden name="oid" value="00DG0000000hoSt">
-              <input type=hidden name="retURL" value="http://www.travelearners.com/thank-you.html">
-              <div class="input-group">
-                <input type="email" value="" name="email" placeholder="Correo electronico" class="form-control input-lg font-16" data-height="45px" id="mce-EMAIL-footer">
-                <span class="input-group-btn">
-                  <button data-height="45px" class="btn btn-colored btn-theme-colored btn-xs m-0 font-14" type="submit" name="submit">Enviar</button>
-                </span>
-              </div>
-            </form>
-          </div>
         </div>
         <div class="col-md-3 col-md-offset-1">
-          <div class="widget dark">
-            <h5 class="widget-title mb-10">Contáctanos</h5>
-            <div class="text-gray">
-              (1) 300 1720 <br>
-              (2) 345 0589
-            </div>
-          </div>
+          <p><i>"Experience, travel - these are an education in themselves"</i> -- Euripides</p>
         </div>
         <div class="col-md-3">
           <div class="widget dark">
@@ -654,19 +641,37 @@
 <!-- Footer Scripts -->
 <!-- JS | Custom script for all pages -->
 <script src="../js/custom.js"></script>
-
-<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
-      (Load Extensions only on Local File Systems ! 
-       The following part can be removed on Server for On Demand Loading) -->
-<script type="text/javascript" src="../js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="../js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="../js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="../js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="../js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="../js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="../js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="../js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="../js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
-
+<script src="../js/main.js"></script>
+<script src="../js/alertify.min.js"></script>
+<script type="text/javascript">
+  function validateEmail(emailField){
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(emailField.value) == false) 
+    {
+      alertify.alert('Ingresa un email válido');
+      return false;
+    }
+    return true;
+  }
+</script>
+<script type="text/javascript"> 
+  $(document).ready(function(){
+    $("#catalogo-form").submit(function () {
+      if($("#00NG000000ADjTt").val().length < 1) {
+        alertify.alert("Por favor ingresa tu teléfono");
+        return false;
+      }
+      if(isNaN($("#00NG000000ADjTt").val())) {
+        alertify.alert("El teléfono solo debe contener números");
+        return false;
+      }
+      if($("#00NG000000ADjTt").val().length < 7) {
+        alertify.alert("Ingresa un teléfono válido");
+        return false;
+      }
+      return true;
+    });
+  });
+</script>
 </body>
 </html>
