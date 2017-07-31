@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-
-
 <script src="https://use.fontawesome.com/aa5c777a40.js"></script>
 
 <!-- Meta Tags -->
@@ -26,8 +24,9 @@
 <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css">
 <link href="../css/animate.css" rel="stylesheet" type="text/css">
-<link href="../css/utility-classes.css" rel="stylesheet" type="text/css">
 <link href="../css/css-plugin-collections.css" rel="stylesheet"/>
+<link href="../css/utility-classes.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/alertify.min.css" />
 <!-- CSS | menuzord megamenu skins -->
 <link id="menuzord-menu-skins" href="../css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
 <!-- CSS | Main style file -->
@@ -84,7 +83,7 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
 <body class="">
 <div id="wrapper" class="clearfix">
   
-  <!-- Header -->
+    <!-- Header -->
   <header id="header" class="header">
     <div class="header-top bg-theme-colored sm-text-center">
       <div class="container">
@@ -135,7 +134,7 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
           <nav id="menuzord" class="menuzord default bg-dark">
             <ul class="menuzord-menu">
               <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../index.html#destinos">Destinos</a>
+              <li class="active"><a href="../index.html#destinos">Destinos</a>
                 <ul class="dropdown">
                   <li><a href="../Paises/Germany.html">Alemania</a></li>
                   <li><a href="../Paises/Australia.html">Australia</a></li>
@@ -146,7 +145,7 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
                   <li><a href="../Paises/Ireland.html">Irlanda</a></li>
                   <li><a href="../Paises/Italy.html">Italia</a></li>
                   <li><a href="../Paises/Malta.html">Malta</a></li>
-                  <li><a href="../Paises/Newzealand.html">Nueva Zelanda</a></li>
+                  <li><a href="../Paises/Newzealand.html">Nueva Zelanda</a></li>        
                   <li><a href="../Paises/Southafrica.html">Sudáfrica</a></li>
                 </ul>
               </li>
@@ -172,7 +171,7 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
             </ul>
             <ul class="list-inline pull-right flip hidden-sm hidden-xs">
               <li>
-                <a  id="btn-coti" class="btn btn-colored btn-flat btn-theme-colored mt-15" href="../cotizacion.html">Pide tu cotización</a>
+                <a id="btn-coti" class="btn btn-colored btn-flat btn-theme-colored mt-15" href="../cotizacion.html">Pide tu cotización</a>
               </li>
             </ul>
           </nav>
@@ -182,59 +181,92 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
   </header>
   
   <!-- Start main-content -->
-  <div class="main-content">
-    <section>
-      <div class="container">
+  <div class="main-content ">
+    
+    <section class="divider parallax layer-overlay overlay-dark-7" data-bg-img="../images/DESTINOS/DESTINOS-DE-LG.jpg" data-parallax-ratio="0.7">
+      <div class="container pt-90 pb-90">
         <div class="row">
-          <div class="col-md-4">
-            <ul>
-              <li>
-                <h5>Tema:</h5>
-                <p>Estudios en el exterior</p>
-              </li>
-              <li>
-                <h5>Anfitrión:</h5>
-                <p>Travelearners</p>
-              </li>
-              <li>
-                <h5>Lugar:</h5>
-                <p>Calle 116 #45-67, Bogota</p>
-              </li>
-              <li>
-                <h5>Fecha:</h5>
-                <p>Julio 29, 2017</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-8">
-            <img src="../images/EVENT/meeting2.jpg" alt="">
-          </div>
-        </div>
-        <div class="row mt-60">
-          <div class="col-md-6">
-            <h3 class="mt-0" style="color: #c8102e">Descripción del evento</h3>
-            <p>¡Conócelo todo sobre los intercambios y estudios en el exterior! Ven a nuestra reunión informativa presencial en Bogotá trataremos temas de interés para tí como destinos, proceso de visas, cursos de Inglés en el exterior y escuelas de Inglés alrededor del mundo al igual que cursos de otros idiomas (Francés, Alemán, Italiano y muchos más). Discutiremos metodologías de aprendizaje, hospedaje en el exterior y el proceso de tu viaje de estudios.</p>
-          </div>
-          <div class="col-md-6">
-            <h3 class="mt-0" style="color: #c8102e">Sobre Travelearners</h3>
-            <p>Desde nuestra fundación en el año 2013 nuestro propósito es fomentar el intercambio cultural y brindar herramientas a personas de todas las edades para integrarse al mundo globalizado de hoy.</p>
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h1 class="text-red">¡Estudia en Bournemouth!</h1>
+            <p class="lead text-white">Semestre académico desde £X,XXX GBP</p>
+            <a class="btn btn-colored btn-lg btn-flat btn-theme-colored pl-20 pr-20" href="../cotizacion.html">Pide tu cotización</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="divider bg-lighter">
-      <div class="container-fluid">
-        <div class="section-title">
+    <section class="divider parallax layer-overlay overlay-deep">
+      <div class="container">
+        <div class="row text-justify">
+          <div class="col-md-6">
+            <h4>Razones para viajar a Bournemouth</h4>
+            <p>Gracias a su ambiente creativo y multicultural, y su innumerable oferta de recreación, Berlín es extremadamente atractiva para estudiantes. La capital Alemana posee una atmósfera muy especial y aquellos que llegan a esta impresionante, interesante, y fascinante ciudad encuentran difícil dejarla.</p>
+            <p>Es también llamada la ciudad verde, numerosos parques, jardines y lagos cercanos los unos de los otros son un punto distintivo de la ciudad y hacen pensar que la ciudad esconde secretos maravillosos que vale la pena descubrir, por ejemplo el Parque Mauer (MauerPark) es famoso por su mercado de las pulgas y eventos de karaoke, además si necesitas escapar del estrés de la ciudad podrás encontrar en Berlín operas, conciertos, obras de teatro, lecturas de poesía, festivales callejeros y muchos otros eventos gratuitos, más vale que tengas un calendario a la mano pues no querrás perderte ninguno.</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Estudios en Bournemouth</h4>
+            <p>Berlín es una metrópolis que nunca duerme, es casa de universidades renombradas internacionalmente, grandes corporaciones y emprendimientos, además es una ciudad que acepta a quien quiere llegar a ella, es también conocida por su emocionante vida nocturna y su vibrante escena artística, cabe mencionar sus teatros y museos de clase mundial. Con más de 60 centros de investigación y más de 40 instituciones de educación superior, Berlín tiene una amplia oferta académica, de hecho si te animas, podrás encontrar a más de 200.000 estudiantes internacionales que viven y crean una nueva historia cada día acá en Berlín.</p>
+            <p>El tamaño de Berlín puede ser abrumador, pero no te preocupes, la infraestructura de transporte de la ciudad es excelente, el transporte público será tu mejor aliado. Puedes viajar a donde lo desees dentro de la ciudad y con descuentos si presentas tu ticket de estudiante semestral, y como dato adicional, este sistema acumula tantos kilómetros diarios que podría viajar 16 veces alrededor de la tierra. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Choose us  -->
+    <section data-bg-img="../images/pattern/p9.png">
+      <div class="container pb-40">
+        <div class="section-content">
           <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center">
-              <h3 class="title text-theme-colored">Formulario de Registro</h3>
+            <div>
+              <h3 class="title mt-0 line-height-1 line-bottom font-24">Motivos por los cuales elegir Bournemouth</h3>
+              <div class="items col-xs-12 col-sm-4 col-md-4">
+                <div class="icon-box p-0">
+                  <a class="icon mb-0 mr-0 pull-left" href="#">
+                    <i class="fa fa-book font-50 text-theme-colored"></i>
+                  </a>
+                  <div class="ml-80">
+                    <h4 class="icon-box-title mt-15 mb-20">Educación global</h4>
+                    <p>Sistema educativo de alta calidad y reconocimiento a nivel mundial</p>
+                  </div>
+                </div>
+              </div>
+              <div class="items col-xs-12 col-sm-4 col-md-4">
+                <div class="icon-box p-0">
+                  <a class="icon mb-0 mr-0 pull-left" href="#">
+                    <i class="fa fa-money font-50 text-theme-colored"></i>
+                  </a>
+                  <div class="ml-80">
+                    <h4 class="icon-box-title mt-15 mb-20">Posibilidades de estudios secundarios</h4>
+                    <p>La educación universitaria en Alemania no tiene costo para estudiantes internacionales en universidades públicas</p>
+                  </div>
+                </div>
+              </div>
+              <div class="items col-xs-12 col-sm-4 col-md-4">
+                <div class="icon-box p-0">
+                  <a class="icon mb-0 mr-0 pull-left" href="#">
+                    <i class="fa fa-suitcase font-50 text-theme-colored"></i>
+                  </a>
+                  <div class="ml-80">
+                    <h4 class="icon-box-title mt-15 mb-20">Alarga tu estadia</h4>
+                    <p>Estudia hasta por 90 días (3 meses) sin visa y si viajas más tiempo te ayudamos sin costo a obtener tu visa de estudiante</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <form id="catalogo-form" class="bg-light p-30 pb-15" name="job_apply_form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+      </div>
+    </section>
+
+        <!-- Section: -->
+    <section class="bg-lighter">
+      <div class="container pb-50">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="bg-theme-colored p-15 pl-30 mb-0 text-white"> Pide un catálogo gratis</h3>
+              <small>¡Solicita ya tu catálogo sobre cursos, opciones de hospedaje, precios, ofertas y  mucho más!</small>
+              <form id="catalogo-form" class="bg-light p-30 pb-15" name="job_apply_form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
               <input type=hidden name="oid" value="00DG0000000hoSt">
               <input type=hidden name="retURL" value="http://www.travelearners.com/thank-you.html">
                 <div class="row">
@@ -255,13 +287,13 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="email">Correo electronico <small>*</small></label>
-                      <input id="email" name="email" class="form-control" type="text" placeholder="Correo electrónico">
+                      <input id="email" name="email" class="form-control" type="text" placeholder="Correo electrónico" onblur="validateEmail(this);" onchange="javascript:document.getElementById('email').value = this.value;" required>
                     </div>
                   </div>               
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="00NG000000ADjTt">Teléfono <small>*</small></label>
-                      <input id="00NG000000ADjTt" name="00NG000000ADjTt" class="form-control" type="text" placeholder="Teléfono">
+                      <input id="00NG000000ADjTt" name="00NG000000ADjTt" class="form-control" type="text" placeholder="Teléfono" required>
                     </div>
                   </div>    
                 </div>
@@ -497,7 +529,7 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label for="city">Ciudad o Departamento <small>*</small></label>
+                      <label for="city">Ciudad o Departamento<small>*</small></label>
                       <select id="city" name="city" class="form-control">
                         <option value="Bogotá D.C.">Bogotá D.C.</option>
                         <option value="Cali">Cali</option>
@@ -537,13 +569,6 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
                     </div>
                   </div>   
                 </div>
-                <div class="row">
-                  <div class="col-sm-12 text-center">
-                    <div class="form-group">
-                      <span class="dateInput dateOnlyInput"><input type=hidden id="00N0f00000FcTpM" name="00N0f00000FcTpM" size="12" type="text" value="29 Julio 2017"/></span><br>
-                    </div>  
-                  </div>    
-                </div>
                 <div class="row">   
                   <div class="col-sm-12">
                     <div class="form-group">
@@ -560,6 +585,288 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
                   <input type="submit" name="submit" value="Enviar" class="btn btn-block btn-dark btn-theme-colored btn-sm mt-20 pt-10 pb-10">
                 </div>
               </form>
+            </div>
+            <div class="col-md-6">
+              <img src="../images/HOME/HOME-Students5.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Causes -->
+    <section>
+      <div class="container pb-sm-10">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1 text-uppercase font-28">Ciudades en <span class="text-theme-colored font-weight-400">Inglaterra</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row mtli-row-clearfix pb-30 pb-sm-0">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="causes maxwidth500 mb-sm-50">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="../images/DESTINOS/DESTINOS-London.jpg">
+                </div>
+                <div class="causes-details clearfix">
+                  <div class="p-30 p-sm-15 bg-lighter">
+                    <h4>Londres</h4>
+                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
+                    <div class="mt-10 clearfix">
+                     <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="London.html">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="causes maxwidth500 mb-sm-50">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="../images/DESTINOS/DESTINOS-Manchester.jpg">
+                </div>
+                <div class="causes-details clearfix">
+                  <div class="p-30 p-sm-15 bg-lighter">
+                    <h4>Manchester</h4>
+                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
+                    <div class="mt-10 clearfix">
+                     <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="Manchester.html">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="causes maxwidth500 mb-sm-50">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="../images/DESTINOS/DESTINOS-Cambridge.jpg">
+                </div>
+                <div class="causes-details clearfix">
+                  <div class="p-30 p-sm-15 bg-lighter">
+                    <h4>Liverpool</h4>
+                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
+                    <div class="mt-10 clearfix">
+                     <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="Liverpool.html">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row mtli-row-clearfix pb-30 pb-sm-0">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="causes maxwidth500 mb-sm-50">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="../images/DESTINOS/DESTINOS-London.jpg">
+                </div>
+                <div class="causes-details clearfix">
+                  <div class="p-30 p-sm-15 bg-lighter">
+                    <h4>Bournemouth</h4>
+                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
+                    <div class="mt-10 clearfix">
+                     <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="Bournemouth.html">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="causes maxwidth500 mb-sm-50">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="../images/DESTINOS/DESTINOS-Manchester.jpg">
+                </div>
+                <div class="causes-details clearfix">
+                  <div class="p-30 p-sm-15 bg-lighter">
+                    <h4>Brighton</h4>
+                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
+                    <div class="mt-10 clearfix">
+                     <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="Brighton.html">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="causes maxwidth500 mb-sm-50">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="../images/DESTINOS/DESTINOS-Cambridge.jpg">
+                </div>
+                <div class="causes-details clearfix">
+                  <div class="p-30 p-sm-15 bg-lighter">
+                    <h4>Oxford</h4>
+                    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisici elit. Illo, laudantium, accusantium impedit magnam nobis</p>
+                    <div class="mt-10 clearfix">
+                     <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="Oxford.html">Mas información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid 3 -->
+    <section class="bg-lighter" id="destinos">
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+              <h2 class="mt-0 line-height-1 text-center text-uppercase font-28">OTROS <span class="text-theme-colored font-weight-400">DESTINOS</span></h2>
+              <p>43 instituciones académicas ubicadas en 80 ciudades en 15 países. La unico que tienes que pensar es que quieres descubrir.</p>
+            </div>
+          </div>
+        </div>
+
+              <!-- Portfolio Gallery Grid -->
+              <div id="grid" class="gallery-isotope grid-3 gutter clearfix">
+                
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="../images/HOME/HOME-Newyork.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">ESTADOS UNIDOS</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="../Paises/UnitedStates.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="../images/HOME/HOME-Toronto.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="title text-center">CANADÁ</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="../Paises/Canada.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="../images/HOME/HOME-Australia.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">AUSTRALIA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="../Paises/Australia.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="../images/HOME/HOME-PARIS.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">FRANCIA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="../Paises/France.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="../images/HOME/HOME-London.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">INGLATERRA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="../Paises/England.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="../images/HOME/HOME-Newzealand.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">NUEVA ZELANDA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="../Paises/Newzealand.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="../images/HOME/HOME-Malta.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">MALTA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="../Paises/Malta.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="../images/HOME/HOME-Ireland.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">IRLANDA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="../Paises/Ireland.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item photography">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="../images/HOME/HOME-Southafrica.jpg" alt="">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <p class="text-center">SUDÁFRICA</p>
+                        <a class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10" href="../Paises/Southafrica.html">Más Información</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+
+              </div>
+              <!-- End Portfolio Gallery Grid -->
+
           </div>
         </div>
       </div>
@@ -690,6 +997,7 @@ src="https://www.facebook.com/tr?id=487672024744586&ev=PageView&noscript=1"
     });
   });
 </script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
